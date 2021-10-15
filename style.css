@@ -1,0 +1,25 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    padding: 0px 20px;
+}
+.top{
+    background-image: linear-gradient(to right, #66D3FC, #DCFAFF);
+    width: vw;
+    height: 60px;
+}
+.Btn_login {
+    height: 40px;
+    width: 80px;
+}
+
+.Btn_login{
+    
+}
