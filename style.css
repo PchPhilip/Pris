@@ -34,10 +34,36 @@ header{
     width: 600px;
     height: 60px;
     box-shadow: 0px 6px #00000027;
+    justify-content: space-between;
+    
 }
 
 .stext{
     padding: 10px;
     color: rgba(0, 0, 0, 0.76);
+}
+
+.Btn_search{
+    display: flex;
+    align-items: center;
+    border-radius: 0px 23px 23px 0;
+    width: 60px;
+    height: 56px;
+    border-width: 1px;
+    background-color: #f9fc52;
+    justify-content: center;
+    border-style:solid;
+    border-color: #444444;
+    border
+}
+
+.imgsearch{
+
+    width: 40px;
+    height: 40px;
+}
+
+.Btn_search:hover{
+    background-color: #dde007;
 }
 
