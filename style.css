@@ -12,10 +12,15 @@ header{
     width: vw;
     height: 60px;
     align-content: center;
+    justify-content: space-between;
+    padding: 0px 10px;
 }
 .Btn_login {
     height: 60px;
     width: 80px;
+    background-color: #f8f8f800;
+    border: 0px;
+    text-decoration: none;
 }
 
 .Btn_menu{
@@ -28,33 +33,33 @@ header{
     display: flex;
     align-items: center;
     border-radius: 25px;
-    border: rgba(58, 57, 57, 0.849);
+    border: #00000054;
     border-width: 2px;
     border-style:solid;
-    width: 600px;
+    width: 60%;
     height: 60px;
-    box-shadow: 0px 6px #00000027;
+    box-shadow: 0px 4px #00000027;
     justify-content: space-between;
+    
     
 }
 
 .stext{
     padding: 10px;
-    color: rgba(0, 0, 0, 0.76);
+    color: #000000e0;
 }
 
 .Btn_search{
     display: flex;
     align-items: center;
     border-radius: 0px 23px 23px 0;
-    width: 60px;
-    height: 56px;
+    width: 65px;
+    height: 57px;
     border-width: 1px;
     background-color: #f9fc52;
     justify-content: center;
     border-style:solid;
-    border-color: #444444;
-    border
+    border-color: #2c2c2c9a;
 }
 
 .imgsearch{
@@ -67,3 +72,42 @@ header{
     background-color: #dde007;
 }
 
+.Btn_header{
+    background-color: #ececec00;
+    border: 0px;
+}
+
+.searchBox{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.dealsWrapper{
+    padding: 60px 30px;
+}
+
+.dealsBox{
+    display: flex;
+    align-items: center;
+    border: 2px;
+    border-radius: 25px 25px 0px 0px;
+    width: vw;
+    height: 150px;
+    border-color: rgba(143, 143, 143, 0.493);
+    border-style:solid;
+}
+
+.dragBarBox{
+    display: flex;
+    align-items: center;
+    border: 2px;
+    border-radius: 0px 0px 10px 10px;
+    width: vw;
+    height: 20px;
+    border-color: rgba(143, 143, 143, 0.5);
+    border-style:solid;
+}
+.dragBar{
+    
+}
