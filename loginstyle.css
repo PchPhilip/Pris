@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginBox{
+    display: flex;
+    justify-content: center;
+    width: 450px;
+    height: 600px;
+    background-image: linear-gradient(#99e0fa, #dbf5fa);
+    border-radius: 20px;
+    
+}
