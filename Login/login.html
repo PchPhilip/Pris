@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/Pris/Login/loginstyle.css" />
+    <script src="loginscript.js"></script>
+
     <title>Document</title>
   </head>
   <body>
     <div class="loginBox">
       <h1>Logga in</h1>
+      <input type="text" name="" placeholder="Användarnamn" id="username" />
+      <input type="password" name="" placeholder="Lösenord" id="password" />
+      <input type="submit" name="" value="Login" onclick="validateUser()" />
+      <p class="errorText"></p>
     </div>
   </body>
 </html>
