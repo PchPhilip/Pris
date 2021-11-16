@@ -23,18 +23,12 @@ header {
   text-decoration: none;
 }
 
-.Btn_menu {
-  background-color: #0000;
-  border: 0px;
-  size: 50%;
-}
-
 .searchBorder {
   display: flex;
   align-items: center;
   border-radius: 25px;
   border: #00000054;
-  border-width: 2px;
+  border-width: 1px;
   border-style: solid;
   width: 60%;
   height: 60px;
@@ -47,7 +41,8 @@ header {
   width: 100%;
   height: 55px;
   border-radius: 25px 0px 0px 25px;
-  margin: 2px 2px 2px 2px;
+  margin: 2px 2px 2px 15px;
+  outline-style: none;
 }
 
 .Btn_search {
@@ -55,7 +50,7 @@ header {
   align-items: center;
   border-radius: 0px 23px 23px 0;
   width: 65px;
-  height: 57px;
+  height: 58px;
   border-width: 1px;
   background-color: #f9fc52;
   justify-content: center;
@@ -64,6 +59,16 @@ header {
 }
 
 .imgsearch {
+  width: 40px;
+  height: 40px;
+}
+
+.Btn_Menu {
+  background-color: #00000000;
+  border: 0px;
+}
+
+.Btn_Menu_Image {
   width: 40px;
   height: 40px;
 }
@@ -126,6 +131,7 @@ header {
 .dealItem {
   width: 100%;
   height: 100%;
+  list-style: none;
 }
 
 .dealsImage {

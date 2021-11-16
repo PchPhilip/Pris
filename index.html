@@ -6,173 +6,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
     <nav class="top">
-      <button class="Btn_menu"><img src="/icons8-menu-50.png" alt="" /></button>
-      <button class="Btn_header"><h1>
+      <button class="Btn_Menu"><img class="Btn_Menu_Image" src="/Pris/Icons/menu.png" alt=""></button>
+      <button class="Btn_header">
+        <h1>
         Prisjägaren
-      </h1></button>
+      </h1>
+    </button>
       
       <button class="Btn_login"><a href="/Pris/Login/login.html">Logga in</a></button>
     </header>
     </nav>
 
     <div class="searchBox">
-      <form class="searchBorder" action="/form/submit" method="GET">
-        <input type="text" name="text" class="search" placeholder="Vad letar du efter?">
-        <button type="submit" class="Btn_search"><img class="imgsearch" src="/Pris/Icons/search.png" alt=""></button>
+      <form class="searchBorder" action="/Pris/Search/search.html" method="GET">
+        <input id="textsearch" type="text" name="text" class="search" placeholder="Vad letar du efter?">
+        <button type="submit" class="Btn_search" onclick="sendsearch()"><img class="imgsearch" src="/Pris/Icons/search.png" alt="" ></button>
       </form>
   </div>
   <div class="dealsWrapper">
     <p>Populärt Just Nu!</p>
-  <div class="dealsBox">
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-    <div class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></div>   
-</div>
+  <ul class="dealsBox">
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    <li class="dealItem"><img class="dealsImage" src="/Pris/Icons/download.jpg" alt=""></li>   
+    
+    
+  </ul>
 </div>
 
 
@@ -342,6 +264,6 @@
 
 
   </body>
-  <script src="script.js"></script>
+
 
 </html>
