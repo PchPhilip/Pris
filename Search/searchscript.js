@@ -1,4 +1,5 @@
 window.addEventListener("load", () => {
   const search = sessionStorage.getItem("textsearch");
-  document.getElementById("search-result").innerHTML = text;
+  var search2 = document.getElementById("textsearch");
+  document.getElementById("search-result").innerHTML = search2;
 });

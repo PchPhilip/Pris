@@ -1,0 +1,50 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  header {
+    min-height: 10vh;
+  }
+  .top {
+    display: flex;
+    background-image: linear-gradient(to right, #66d3fc, #dcfaff);
+    width: vw;
+    height: 60px;
+    align-content: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+  .Btn_login {
+    height: 60px;
+    width: 80px;
+    background-color: #f8f8f800;
+    border: 0px;
+    text-decoration: none;
+  }
+  .Btn_Menu {
+    background-color: #00000000;
+    border: 0px;
+  }
+  
+  .Btn_Menu_Image {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .Btn_header {
+    background-color: #ececec00;
+    border: 0px;
+  }
+
+  .searchItem{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .searchImage{
+      height: 200px
+  }
