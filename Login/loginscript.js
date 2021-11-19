@@ -1,3 +1,4 @@
+// Array med lösenord... inte säkert (:
 var DBUsers = [
   {
     username: "test",
@@ -13,6 +14,7 @@ var DBUsers = [
   },
 ];
 
+// for loop som går igenom arrayen och jämför angivna lösenordet och användarnamnet med "databasen"
 function validateUser() {
   var username = document.getElementById("username").value;
   var password = document.getElementById("password").value;
