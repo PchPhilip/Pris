@@ -1,3 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.background {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(/Icons/Screenshot_66.png);
+  background-size: cover;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
 header {
   min-height: 10vh;
 }
@@ -36,11 +54,6 @@ header {
   height: 40px;
 }
 
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .loginBox {
   display: flex;
   text-align: center;
