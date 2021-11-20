@@ -45,9 +45,7 @@ header {
 
 .searchItem {
   display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-  flex-direction: row;
+  justify-content: center;
   align-items: center;
   border: 2px;
   border-color: rgb(78, 78, 78);
@@ -108,8 +106,4 @@ header {
   padding: 5px;
   display: flex;
   justify-content: center;
-}
-
-.container {
-  display: flex;
 }
