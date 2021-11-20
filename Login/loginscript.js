@@ -24,7 +24,7 @@ function validateUser() {
       document.cookie = "username=" + username;
       document.cookie = "password=" + password;
       console.log("Inloggad som" + username);
-      window.location.pathname = "/index.html";
+      window.location.pathname = "Pris/index.html";
       return;
     }
     console.log("Fel lösenord eller användarnamn!");
