@@ -5,8 +5,4 @@ function sendsearch() {
   return;
 }
 
-$(document).ready(function(){
-  $('input').click(function(){
-    $('body').toggleClass('active')
-  });
-});
+
